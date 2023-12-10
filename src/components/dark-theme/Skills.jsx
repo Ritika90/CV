@@ -1,4 +1,5 @@
 import { Box, Typography, Badge } from "@mui/material";
+import { SKILLS } from "components/contants/theme";
 import T from "T";
 
 const Skills = () => {
@@ -17,7 +18,7 @@ const Skills = () => {
                 }
             }} m={1}>
                 {
-                    ['ReactJS', 'Ruby on Rails', 'JavaScript', 'JQuery', 'HTML', 'CSS', 'Material UI', 'Bootstrap', 'Foundation', 'MySQL', 'Postgres', 'SQLite', 'Agile\Scrum SDLCs', 'GIT', 'Postman', 'Confluence', 'Jira'].map(skill => <Box key={skill} display="flex">
+                    SKILLS.map(skill => <Box key={skill} display="flex">
                         <Badge variant="dot" />
                         <Typography fontSize={13} ml={1.5}>{skill}</Typography>
                     </Box>)

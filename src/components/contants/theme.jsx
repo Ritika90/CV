@@ -91,4 +91,5 @@ export const LANGUAGES = ['English', 'Hindi', 'Punjabi'];
 export const COLLEGE_EDUCATION = ['M. Tech(CSE: 83%)', 'B. Tech (CSE: 8.6*)'];
 export const SCHOOL_EDUCATION = ['HSC(CBSE: 78.4%)', 'SSC(CBSE: 78.2%)'];
 export const STRENGTHS = ["Leadership Quality", "Quick Learner", "Punctual", "Flexible"];
-export const ACHIEVEMENTS = ["M.Tech Gold Medalist", "First prize in intra college table tennis competition", "First prize in the women's doubles category at the intra-college badminton championship", "Second prize in intra college volleyball championship"]
+export const ACHIEVEMENTS = ["M.Tech Gold Medalist", "First prize in intra college table tennis competition", "First prize in the women's doubles category at the intra-college badminton championship", "Second prize in intra college volleyball championship"];
+export const SKILLS = ['ReactJS', 'Ruby on Rails', 'JavaScript', 'JQuery', 'HTML', 'CSS', 'Material UI', 'Bootstrap', 'Foundation', 'MySQL', 'Postgres', 'SQLite', 'Agile\Scrum SDLCs', 'GIT', 'Postman', 'Confluence', 'Jira'];
