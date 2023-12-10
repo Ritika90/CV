@@ -16,6 +16,7 @@ const InfoModal = () => {
     const StyledButton = styled(Button)(() => ({
         borderColor: 'black',
         color: 'black',
+        whiteSpace: 'nowrap',
         '&:hover': {
             borderColor: 'white',
             color: 'white',
@@ -57,7 +58,7 @@ const InfoModal = () => {
                     <StyledButton variant="outlined" size="small" onClick={ handleClose }>
                         { T.CLOSE }
                     </StyledButton>
-                    <StyledButton variant="outlined" href={process.env.REACT_APP_GITHUB || USER_GITHUB_URL} target="_blank" size="small">
+                    <StyledButton variant="outlined" href={process.env.REACT_APP_GITHUB || USER_GITHUB_URL} target="_blank" size="small" sx={{ ml: 3 }}>
                         { T.CHECK_CODE }
                     </StyledButton>
                 </Box>
