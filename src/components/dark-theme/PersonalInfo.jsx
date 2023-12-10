@@ -1,11 +1,11 @@
+import { format } from 'date-fns';
 import { Box, Typography, Link } from "@mui/material";
 import { Phone, Mail, LocationOn, LinkedIn, CalendarToday } from '@mui/icons-material';
 import { USER_ADDRESS, USER_EMAIL_ADDRESS, USER_LINKEDIN_URL, USER_MOBILE_NUMBER } from "components/contants/theme";
 
 const PersonalInfo = () => {
     const currentDate = new Date();
-    currentDate.setHours(0, 0, 0, 0);
-    const formattedDate = currentDate.toLocaleDateString('en-US'); // You can specify the desired locale
+    const formattedDate = format(currentDate, "do MMMM',' yyyy")
     return (
         <Box p={2}>
             <Box display="flex" color="white" alignItems="center">
