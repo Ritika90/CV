@@ -1,5 +1,6 @@
 import { Box, Typography, Link } from "@mui/material";
 import { Phone, Mail, LocationOn, LinkedIn, CalendarToday } from '@mui/icons-material';
+import { USER_ADDRESS, USER_EMAIL_ADDRESS, USER_LINKEDIN_URL, USER_MOBILE_NUMBER } from "components/contants/theme";
 
 const PersonalInfo = () => {
     const currentDate = new Date();
@@ -10,27 +11,27 @@ const PersonalInfo = () => {
             <Box display="flex" color="white" alignItems="center">
                 <Phone fontSize="12" />
                 <Typography ml={1} fontSize={13}>
-                    { process.env.REACT_APP_MOBILE_NUMBER }
+                    { process.env.REACT_APP_MOBILE_NUMBER || USER_MOBILE_NUMBER}
                 </Typography>
             </Box>
             <Box display="flex" color="white" alignItems="center" mt={1}>
                 <Mail fontSize="12" />
                 <Typography ml={1} fontSize={13} noWrap>
-                    { process.env.REACT_APP_EMAIL_ADDRESS }
+                    { process.env.REACT_APP_EMAIL_ADDRESS || USER_EMAIL_ADDRESS}
                 </Typography>
             </Box>
             <Box display="flex" color="white" alignItems="center" mt={1}>
                 <LinkedIn fontSize="12" />
-                <Link href={ `https://www.${ process.env.REACT_APP_LINKEDIN }`} target="_blank" sx={{ textDecoration: 'auto', color: 'white' }}>
+                <Link href={ `https://www.${ process.env.REACT_APP_LINKEDIN || USER_LINKEDIN_URL}`} target="_blank" sx={{ textDecoration: 'auto', color: 'white' }}>
                     <Typography ml={1} fontSize={13} noWrap>
-                        { process.env.REACT_APP_LINKEDIN }
+                        { process.env.REACT_APP_LINKEDIN || USER_LINKEDIN_URL }
                     </Typography>
                 </Link>
             </Box>
             <Box display="flex" color="white" alignItems="center" mt={1}>
                 <LocationOn fontSize="12" />
                 <Typography ml={1} fontSize={13}>
-                    { process.env.REACT_APP_ADDRESS }
+                    { process.env.REACT_APP_ADDRESS || USER_ADDRESS}
                 </Typography>
             </Box>
             <Box display="flex" color="white" alignItems="center" mt={1}>

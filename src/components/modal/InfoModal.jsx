@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Typography, Modal, Box, Paper, Button, Backdrop } from '@mui/material';
 import { styled } from '@mui/system';
+import { USER_GITHUB_URL } from 'components/contants/theme';
 import T from 'T';
 
 const InfoModal = () => {
@@ -56,7 +57,7 @@ const InfoModal = () => {
                     <StyledButton variant="outlined" size="small" onClick={ handleClose }>
                         { T.CLOSE }
                     </StyledButton>
-                    <StyledButton variant="outlined" href={process.env.REACT_APP_GITHUB} target="_blank" size="small">
+                    <StyledButton variant="outlined" href={process.env.REACT_APP_GITHUB || USER_GITHUB_URL} target="_blank" size="small">
                         { T.CHECK_CODE }
                     </StyledButton>
                 </Box>
