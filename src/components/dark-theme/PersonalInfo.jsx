@@ -36,7 +36,7 @@ const PersonalInfo = () => {
             </Box>
             <Box display="flex" color="white" alignItems="center" mt={1}>
                 <CalendarToday sx={{ width: 14, height: 14 }} />
-                <Typography ml={1} fontSize={13}>
+                <Typography ml={1} fontSize={13} mt={0.125}>
                     { formattedDate }
                 </Typography>
             </Box>
